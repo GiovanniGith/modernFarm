@@ -1,11 +1,11 @@
 console.log("Welcome to the main module")
 
-import { createPlan } from "./plan.js"
+import { createPlan } from "./plan.js";
 import { plantSeeds } from "./tractor.js";
 import { createAsparagus } from "./seeds/asparagus.js";
 import { addPlant, usePlants } from "./field.js";
 import { harvestPlants } from "./harvester.js";
-
+import { catalog } from "./catalog.js";
 
 
 const yearlyPlan = createPlan();
@@ -28,7 +28,7 @@ console.log(asparagusSeed)
 //addPlant(mayflower);
 */
 
-console.log(usePlants());
+//console.log(usePlants());
 
 const plan = [
     ["Potato", "Soybean", "Soybean", "Corn"],
@@ -42,3 +42,5 @@ plantSeeds(plan);
 
 const modernFarm = harvestPlants(usePlants());
 console.log(modernFarm);
+
+catalog(modernFarm)

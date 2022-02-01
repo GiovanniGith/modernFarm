@@ -1,6 +1,6 @@
-export const harvestPlants = (array) => { 
+export const harvestPlants = (plantsArray) => { 
     const newPlan = []  
-    for(const plant of array){
+    for(const plant of plantsArray){
         if(plant.output === 2){
             newPlan.push(plant);
             newPlan.push(plant);
